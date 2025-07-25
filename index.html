@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/mgs.png" type="image/x-icon">
+    <title>
+      Maria Gracia Salomo | Virtual Assistant & Business Support Expert
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <style>
+      :root {
+          --beige-color: #F5F5DC;
+          --brand-brown: #786C3B;
+          --dark-brown: #5C452B;
+          --nav-brown: #964B00;
+      }
+      html {
+          scroll-behavior: smooth;
+          /* Add scroll-padding-top to account for the sticky navbar height */
+          scroll-padding-top: 70px;
+      }
+      /* Active nav link style */
+      .nav-link.active {
+          color: var(--beige-color);
+          font-weight: 600;
+          transform: scale(1.05);
+      }
+      .back-to-top {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: var(--beige-color);
+          color: #333;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: opacity 0.3s, transform 0.3s;
+      }
+      .back-to-top.show {
+          display: flex;
+      }
+      .back-to-top:hover {
+          transform: scale(1.1);
+      }
+      nav a {
+          transition: color 0.3s ease, transform 0.3s ease;
+      }
+      nav a:hover {
+          transform: translateY(-2px);
+          display: inline-block;
+      }
+      .bounce:hover {
+          animation: bounce 0.5s ease;
+      }
+      @keyframes bounce {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+      }
+      /* Card shadow for modern look */
+      .card-shadow {
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav
+      id="navbar"
+      class="bg-[#964B00] text-white sticky top-0 z-50 shadow-md"
+      data-aos="fade-down"
+      data-aos-duration="500"
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold">Maria Gracia Salomo</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-4 sm:space-x-6">
+          <a href="#about" class="nav-link hover:text-gray-200 transition"
+            >About</a
+          >
+          <a href="#skills" class="nav-link hover:text-gray-200 transition"
+            >Skills</a
+          >
+          <a
+            href="#achievements"
+            class="nav-link hover:text-gray-200 transition"
+            >Achievements</a
+          >
+          <a href="#experience" class="nav-link hover:text-gray-200 transition"
+            >Experience</a
+          >
+          <a href="#contact" class="nav-link hover:text-gray-200 transition"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#A0522D] text-center">
+        <a href="#about" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
+          >About</a
+        >
+        <a href="#skills" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
+          >Skills</a
+        >
+        <a
+          href="#achievements"
+          class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
+          >Achievements</a
+        >
+        <a
+          href="#experience"
+          class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
+          >Experience</a
+        >
+        <a href="#contact" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Full-Page Hero Section with Client-Focused Messaging -->
+    <header
+      id="home"
+      class="relative bg-gradient-to-r from-[#786C3B] to-[#C9B99B] text-white min-h-screen flex items-center justify-center"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div
+        class=" container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-center md:justify-between"
+      >
+        <!-- Text content on the left -->
+        <div class="text-center md:text-left md:mr-6 max-w-lg">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            Virtual Assistant & Business Support Expert
+          </h1>
+          <p class="text-lg md:text-xl mb-8">
+            Helping businesses scale with 7+ years of expertise in travel,
+            finance, customer service, and social media strategy.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block bg-white text-[#786C3B] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition bounce shadow-lg"
+          >
+            Hire Me Today
+          </a>
+        </div>
+
+        <!-- Image on the right - Using placeholder for example -->
+        <div class=" mt-8 md:mt-0  w-full md:w-1/2 flex justify-center lg:absolute lg:-bottom-50 lg:top-20 lg:right-0">
+          <!-- NOTE: Replace with your actual image path -->
+          <img
+            src="/image/graciafull.webp"
+            alt="Maria Gracia Salomo"
+            class="mt-8 max-w-sm md:max-w-md lg:max-w-full" 
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-12 md:py-20 bg-gray-100"
+      data-aos="fade-right"
+      data-aos-duration="600"
+    >
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-6 text-[#786C3B] text-center"
+        >
+          About Me
+        </h2>
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg card-shadow">
+          <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            With over 7 years of experience in travel, insurance, finance, and
+            customer service, I’m dedicated to helping businesses grow. My
+            mission is to provide top-notch virtual assistance, bookkeeping,
+            social media strategy, and customer care, while continuously
+            upskilling to stay ahead of industry trends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-12 md:py-20"
+      data-aos="zoom-in"
+      data-aos-duration="600"
+    >
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-8 text-[#786C3B] text-center"
+        >
+          My Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-6 rounded-lg card-shadow"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-building text-[#786C3B] text-xl mr-3"></i>
+              <h3 class="text-lg md:text-xl font-semibold">Industries</h3>
+            </div>
+            <p class="text-base text-gray-700">
+              Travel, Insurance, Retail, BPO
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg card-shadow"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-cogs text-[#786C3B] text-xl mr-3"></i>
+              <h3 class="text-lg md:text-xl font-semibold">Core Expertise</h3>
+            </div>
+            <p class="text-base text-gray-700">
+              Customer Service • Travel Planning • Insurance Policies •
+              Bookkeeping & Reporting
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg card-shadow"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-share-alt text-[#786C3B] text-xl mr-3"></i>
+              <h3 class="text-lg md:text-xl font-semibold">Social Media</h3>
+            </div>
+            <p class="text-base text-gray-700">
+              Strategy • Content Creation • Copywriting • Paid Ads
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg card-shadow"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-tools text-[#786C3B] text-xl mr-3"></i>
+              <h3 class="text-lg md:text-xl font-semibold">Tech & Tools</h3>
+            </div>
+            <p class="text-base text-gray-700">
+              QuickBooks • Xero • Excel • Google Workspace • Canva • ChatGPT •
+              Amadeus • Sabre
+            </p>
+          </div>
+        </div>
+        <h3
+          class="text-lg md:text-xl font-bold mb-6 text-[#786C3B] text-center"
+        >
+          Tools I Use
+        </h3>
+        <div class="owl-carousel owl-theme">
+          <!-- NOTE: Replace placeholders with your actual images -->
+          <div class="item p-4">
+            <img src="/image//quickbooks-logo.webp" alt="QuickBooks" />
+          </div>
+          <div class="item p-4">
+            <img src="/image//xero-logo.webp" alt="Xero" />
+          </div>
+          <div class="item p-4">
+            <img src="/image//excel-logo.png" alt="Excel" />
+          </div>
+          <div class="item p-4">
+            <img
+              src="/image//google-workspace-logo.webp"
+              alt="Google Workspace"
+            />
+          </div>
+          <div class="item p-4">
+            <img src="/image/canva-logo.png" alt="Canva" />
+          </div>
+          <div class="item p-4">
+            <img src="/image//amadeus-logo.png" alt="Amadeus" />
+          </div>
+          <div class="item p-4">
+            <img src="/image//sabre-logo.png" alt="Sabre" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Achievements Section -->
+    <section
+      id="achievements"
+      class="py-12 md:py-20 bg-gray-100"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-8 text-[#786C3B] text-center"
+        >
+          Key Achievements
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-[#F5F5DC] p-6 rounded-lg card-shadow text-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <i class="fas fa-chart-line text-[#786C3B] text-3xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">35% Social Media Growth</h3>
+            <p class="text-base text-gray-700">
+              Increased Facebook & Instagram followers for ERC Travel Services
+              through targeted campaigns.
+            </p>
+          </div>
+          <div
+            class="bg-[#F5F5DC] p-6 rounded-lg card-shadow text-center"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <i class="fas fa-star text-[#786C3B] text-3xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">
+              95% Customer Satisfaction
+            </h3>
+            <p class="text-base text-gray-700">
+              Achieved consistently high CSAT scores for 6 quarters as a
+              Customer Service Representative.
+            </p>
+          </div>
+          <div
+            class="bg-[#F5F5DC] p-6 rounded-lg card-shadow text-center"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <i class="fas fa-check-circle text-[#786C3B] text-3xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">100% Audit Compliance</h3>
+            <p class="text-base text-gray-700">
+              Managed petty cash fund with flawless ledgers at Breakthrough &
+              Milestones Productions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section
+      id="experience"
+      class="py-12 md:py-20"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-8 text-[#786C3B] text-center"
+        >
+          Career Path
+        </h2>
+        <!-- Timeline for larger screens -->
+        <div class="hidden md:block relative max-w-4xl mx-auto">
+          <!-- The vertical line -->
+          <div
+            class="absolute h-full border border-gray-300 border-dashed left-1/2 transform -translate-x-1/2"
+          ></div>
+          <div class="space-y-16">
+            <!-- Timeline Item (Right) -->
+            <div class="relative" data-aos="fade-left">
+              <div class="ml-[54%] p-6 bg-white rounded-lg card-shadow">
+                <h3 class="text-lg md:text-xl font-semibold">
+                  EmpireOne Travel – Virtual Assistant (Canada)
+                </h3>
+                <p class="text-base font-medium text-gray-500">
+                  2025 – Present
+                </p>
+                <ul
+                  class="list-disc list-inside text-base text-gray-700 space-y-1 mt-2"
+                >
+                  <li>End-to-end flight booking & ticketing (Amadeus/Sabre)</li>
+                  <li>Invoice generation and payment follow-ups</li>
+                </ul>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#786C3B] rounded-full text-white flex items-center justify-center"
+              >
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div>
+            <!-- Timeline Item (Left) -->
+            <div class="relative" data-aos="fade-right">
+              <div
+                class="mr-[54%] p-6 bg-white rounded-lg card-shadow text-right"
+              >
+                <h3 class="text-lg md:text-xl font-semibold">
+                  Wisemen Insurance Agency – Insurance Agent
+                </h3>
+                <p class="text-base font-medium text-gray-500">2023 – 2024</p>
+                <ul
+                  class="list-disc list-inside text-base text-gray-700 space-y-1 mt-2"
+                >
+                  <li>Prospected and onboarded new clients</li>
+                  <li>Managed policy renewals, upgrades, and claims</li>
+                </ul>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#786C3B] rounded-full text-white flex items-center justify-center"
+              >
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div>
+            <!-- Timeline Item (Right) -->
+            <div class="relative" data-aos="fade-left">
+              <div class="ml-[54%] p-6 bg-white rounded-lg card-shadow">
+                <h3 class="text-lg md:text-xl font-semibold">
+                  ERC Travel Services – Bookkeeper / Social Media
+                </h3>
+                <p class="text-base font-medium text-gray-500">2017 – 2023</p>
+                <ul
+                  class="list-disc list-inside text-base text-gray-700 space-y-1 mt-2"
+                >
+                  <li>Full-cycle bookkeeping in Xero</li>
+                  <li>Grew social media following by 35%</li>
+                </ul>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#786C3B] rounded-full text-white flex items-center justify-center"
+              >
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div>
+            <!-- Timeline Item (Left) -->
+            <div class="relative" data-aos="fade-right">
+              <div
+                class="mr-[54%] p-6 bg-white rounded-lg card-shadow text-right"
+              >
+                <h3 class="text-lg md:text-xl font-semibold">
+                    1-800 Flowers.com – Customer Services Representative
+                </h3>
+                <p class="text-base font-medium text-gray-500">2016 – 2017</p>
+                <ul
+                  class="list-disc list-inside text-base text-gray-700 space-y-1 mt-2"
+                >
+                  <li>Offer assistance to customers facing issues with
+                    products or services</li>
+                  <li>Handling Complaints
+                </li>
+                </ul>
+              </div>
+              <div
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#786C3B] rounded-full text-white flex items-center justify-center"
+              >
+                <i class="fas fa-briefcase"></i>
+              </div>
+            </div>
+             <!-- Timeline Item (Right) -->
+             <div class="relative" data-aos="fade-left">
+                <div class="ml-[54%] p-6 bg-white rounded-lg card-shadow">
+                  <h3 class="text-lg md:text-xl font-semibold">
+                    Breakthrough and Milestones Productions International. – Petty Cash Custodian
+                  </h3>
+                  <p class="text-base font-medium text-gray-500">2016 – 2015</p>
+                  <ul
+                    class="list-disc list-inside text-base text-gray-700 space-y-1 mt-2"
+                  >
+                    <li>Receiving and disbursing cash</li>
+                    <li>Maintaining a petty cash fund</li>
+                    <li>Keep accurate records for all daily transactions.
+                    </li>
+                    <li>Manange and safeguard a small amount of cash</li>
+                  </ul>
+                </div>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#786C3B] rounded-full text-white flex items-center justify-center"
+                >
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Simplified list for mobile screens -->
+        <div class="md:hidden space-y-8 max-w-lg mx-auto">
+          <div class="bg-white p-6 rounded-lg card-shadow" data-aos="fade-up">
+            <h3 class="text-lg font-semibold">
+              EmpireOne Travel (2025 – Present)
+            </h3>
+            <p class="text-gray-600">Virtual Assistant (Canada)</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg card-shadow" data-aos="fade-up">
+            <h3 class="text-lg font-semibold">
+              Wisemen Insurance Agency (2023 – 2024)
+            </h3>
+            <p class="text-gray-600">Insurance Agent</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg card-shadow" data-aos="fade-up">
+            <h3 class="text-lg font-semibold">
+              ERC Travel Services (2017 – 2023)
+            </h3>
+            <p class="text-gray-600">Bookkeeper / Social Media</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg card-shadow" data-aos="fade-up">
+            <h3 class="text-lg font-semibold">1-800 Flowers.com
+                (2016-2017)</h3>
+            <p class="text-gray-600">Customer Services Representative</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg card-shadow" data-aos="fade-up">
+            <h3 class="text-lg font-semibold">Breakthrough and Milestones Productions International.
+                (2006-2015)</h3>
+            <p class="text-gray-600">Petty Cash Custodian</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-12 md:py-20 bg-[#F5F5DC]"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
+      <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#786C3B]">
+          Get in Touch
+        </h2>
+        <p class="text-base md:text-lg max-w-2xl mx-auto mb-8 text-gray-700">
+          I'm excited to connect with you and discuss how I can help your
+          business grow. Feel free to reach out!
+        </p>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8"
+        >
+          <div
+            class="bg-white p-6 rounded-lg card-shadow hover:shadow-lg transition"
+          >
+            <i class="fas fa-phone-alt text-[#786C3B] text-2xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">Phone</h3>
+            <p class="text-sm text-gray-700">0915-473-9520</p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg card-shadow hover:shadow-lg transition"
+          >
+            <i class="fas fa-envelope text-[#786C3B] text-2xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">Email</h3>
+            <p class="text-sm text-gray-700 break-words">
+              salomomariagracia14@gmail.com
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg card-shadow hover:shadow-lg transition"
+          >
+            <i class="fas fa-map-marker-alt text-[#786C3B] text-2xl mb-4"></i>
+            <h3 class="text-lg font-semibold mb-2">Location</h3>
+            <p class="text-sm text-gray-700">Apalit, Pampanga, Philippines</p>
+          </div>
+        </div>
+        <a
+          href="mailto:salomomariagracia14@gmail.com"
+          class="inline-block bg-[#786C3B] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#5C452B] transition bounce shadow-lg"
+        >
+          Send Me a Message
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#786C3B] text-white py-6"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
+      <div class="container mx-auto px-4 sm:px-6 text-center">
+        <p>
+          &copy; <span id="footer-year"></span> Maria Gracia Salomo. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"
+      ><i class="fas fa-chevron-up"></i
+    ></a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      // window.onbeforeunload = function () {
+      //     window.scrollTo(0, 0);
+      // };
+      window.onload = function () {
+          window.scrollTo(0, 0);
+      };
+
+      document.addEventListener('DOMContentLoaded', function () {
+          // Initialize AOS (Animate on Scroll)
+          AOS.init({
+              once: true, // Only animate elements once
+              duration: 800,
+          });
+
+          // Initialize Owl Carousel
+          $(".owl-carousel").owlCarousel({
+              loop: true,
+              margin: 20,
+              nav: false,
+              dots: true,
+              autoplay: true,
+              autoplayTimeout: 3000,
+              autoplayHoverPause: true,
+              responsive: {
+                  0: { items: 2 },
+                  600: { items: 4 },
+                  1000: { items: 6 }
+              }
+          });
+
+          // Back to Top Button
+          const backToTopButton = document.getElementById('backToTop');
+          window.onscroll = function () {
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                  backToTopButton.classList.add('show');
+              } else {
+                  backToTopButton.classList.remove('show');
+              }
+          };
+
+          // Mobile Menu Toggle
+          const menuBtn = document.getElementById('menu-btn');
+          const mobileMenu = document.getElementById('mobile-menu');
+          menuBtn.addEventListener('click', () => {
+              mobileMenu.classList.toggle('hidden');
+          });
+
+          // Dynamic Footer Year
+          document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+          // *** IMPROVED NAVBAR HIGHLIGHTING ON SCROLL ***
+          const sections = document.querySelectorAll('section[id]');
+          const navLinks = document.querySelectorAll('.nav-link');
+          const navHeight = document.getElementById('navbar').offsetHeight;
+
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      const id = entry.target.getAttribute('id');
+                      const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+
+                      navLinks.forEach(link => link.classList.remove('active'));
+                      if (activeLink) {
+                         activeLink.classList.add('active');
+                      }
+                  }
+              });
+          }, {
+              rootMargin: `-${navHeight}px 0px 0px 0px`,
+              threshold: 0.2
+          });
+
+          sections.forEach(section => {
+              observer.observe(section);
+          });
+      });
+    </script>
+  </body>
+</html>
