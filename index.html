@@ -161,38 +161,120 @@
     <!-- Full-Page Hero Section with Client-Focused Messaging -->
     <header
       id="home"
-      class="relative bg-gradient-to-r from-[#786C3B] to-[#C9B99B] text-white min-h-screen flex items-center justify-center"
+      class="relative bg-gradient-to-br from-[#786C3B] via-[#8B7355] to-[#C9B99B] text-white min-h-screen flex items-center justify-center overflow-hidden"
       data-aos="fade-up"
       data-aos-duration="800"
     >
-      <div
-        class=" container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-center md:justify-between"
-      >
-        <!-- Text content on the left -->
-        <div class="text-center md:text-left md:mr-6 max-w-lg">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Virtual Assistant & Business Support Expert
-          </h1>
-          <p class="text-lg md:text-xl mb-8">
-            Helping businesses scale with 7+ years of expertise in travel,
-            finance, customer service, and social media strategy.
-          </p>
-          <a
-            href="#contact"
-            class="inline-block bg-white text-[#786C3B] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition bounce shadow-lg"
-          >
-            Hire Me Today
-          </a>
-        </div>
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-48 h-48 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-white rounded-full blur-2xl"></div>
+      </div>
 
-        <!-- Image on the right - Using placeholder for example -->
-        <div class=" mt-8 md:mt-0  w-full md:w-1/2 flex justify-center lg:absolute lg:-bottom-50 lg:top-20 lg:right-0">
-          <!-- NOTE: Replace with your actual image path -->
-          <img
-            src="/image/graciafull.webp"
-            alt="Maria Gracia Salomo"
-            class="mt-8 max-w-sm md:max-w-md lg:max-w-full" 
-          />
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+          
+          <!-- Text content -->
+          <div class="text-center lg:text-left space-y-8" data-aos="fade-right" data-aos-delay="200">
+            <!-- Badge/Tag -->
+            <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/30">
+              <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+              Available for Projects
+            </div>
+            
+            <div class="space-y-6">
+              <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                <span class="block text-white">Virtual Assistant</span>
+                <span class="block bg-gradient-to-r from-white to-[#F5F5DC] bg-clip-text text-transparent">
+                  & Business Expert
+                </span>
+              </h1>
+              
+              <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
+                Empowering businesses to scale efficiently with 
+                <span class="font-semibold text-[#F5F5DC]">7+ years of expertise</span> 
+                in travel, finance, customer service, and strategic social media management.
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a
+                href="#contact"
+                class="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#786C3B] rounded-xl font-bold text-lg hover:bg-[#F5F5DC] transition-all duration-300 shadow-2xl hover:shadow-white/25 hover:scale-105"
+              >
+                Hire Me Today
+                <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+              
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white rounded-xl font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+              >
+                Learn More
+              </a>
+            </div>
+
+            <!-- Stats/Highlights -->
+            <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
+              <div class="text-center lg:text-left">
+                <div class="text-3xl font-bold text-[#F5F5DC]">7+</div>
+                <div class="text-sm text-white/80">Years Experience</div>
+              </div>
+              <div class="text-center lg:text-left">
+                <div class="text-3xl font-bold text-[#F5F5DC]">50+</div>
+                <div class="text-sm text-white/80">Happy Clients</div>
+              </div>
+              <div class="text-center lg:text-left">
+                <div class="text-3xl font-bold text-[#F5F5DC]">98%</div>
+                <div class="text-sm text-white/80">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Images Section -->
+          <div class="relative lg:h-full flex items-center justify-center" data-aos="fade-left" data-aos-delay="400">
+            <!-- Background decorative image -->
+            <div class="absolute inset-0 flex items-center justify-center opacity-30">
+              <img
+                src="/image/heroimagebg.png"
+                alt="Background decoration"
+                class="w-full h-auto max-w-lg object-contain filter blur-sm"
+              />
+            </div>
+            
+            <!-- Main profile image -->
+            <div class="relative z-10 group">
+              <div class="absolute -inset-4 bg-gradient-to-r from-white/20 to-[#F5F5DC]/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+              <div class="relative bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20">
+                <img
+                  src="/image/graciafull.webp"
+                  alt="Maria Gracia Salomo - Virtual Assistant Expert"
+                  class="w-full h-auto max-w-md mx-auto rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                />
+                
+                <!-- Floating elements -->
+                <div class="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg animate-bounce">
+                  Online
+                </div>
+                
+                <div class="absolute -bottom-4 -left-4 bg-white/90 text-[#786C3B] px-4 py-2 rounded-xl font-semibold shadow-lg">
+                  Ready to Help! 💼
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+          <div class="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </header>
@@ -200,24 +282,177 @@
     <!-- About Section -->
     <section
       id="about"
-      class="py-12 md:py-20 bg-gray-100"
-      data-aos="fade-right"
+      class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+      data-aos="fade-up"
       data-aos-duration="600"
     >
-      <div class="container mx-auto px-4 sm:px-6">
-        <h2
-          class="text-2xl md:text-3xl font-bold mb-6 text-[#786C3B] text-center"
-        >
-          About Me
-        </h2>
-        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg card-shadow">
-          <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-            With over 7 years of experience in travel, insurance, finance, and
-            customer service, I’m dedicated to helping businesses grow. My
-            mission is to provide top-notch virtual assistance, bookkeeping,
-            social media strategy, and customer care, while continuously
-            upskilling to stay ahead of industry trends.
-          </p>
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-20 right-20 w-64 h-64 bg-[#786C3B] rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-20 w-48 h-48 bg-[#C9B99B] rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <div class="inline-flex items-center px-4 py-2 bg-[#786C3B]/10 rounded-full text-sm font-medium text-[#786C3B] mb-4">
+            <span class="w-2 h-2 bg-[#786C3B] rounded-full mr-2"></span>
+            Get to Know Me
+          </div>
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#786C3B] mb-6">
+            About <span class="bg-gradient-to-r from-[#786C3B] to-[#C9B99B] bg-clip-text text-transparent">Maria Gracia</span>
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- Content Side -->
+          <div class="space-y-8" data-aos="fade-right" data-aos-delay="200">
+            <!-- Main Story -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-[#786C3B]/10">
+              <div class="flex items-start space-x-4 mb-6">
+                <div class="flex-shrink-0">
+                  <div class="w-12 h-12 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-xl flex items-center justify-center">
+                    <i class="fas fa-user-tie text-white text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-[#786C3B] mb-2">My Journey</h3>
+                  <p class="text-lg text-gray-700 leading-relaxed">
+                    With over <span class="font-semibold text-[#786C3B]">7 years of experience</span> in travel, insurance, finance, and customer service, I've dedicated my career to helping businesses thrive and scale efficiently.
+                  </p>
+                </div>
+              </div>
+              
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                My mission is to provide <span class="font-semibold text-[#786C3B]">exceptional virtual assistance</span>, comprehensive bookkeeping, strategic social media management, and outstanding customer care. I believe in continuous learning and staying ahead of industry trends to deliver the best results for my clients.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-[#786C3B]/10 text-[#786C3B] rounded-full text-sm font-medium">Problem Solver</span>
+                <span class="px-4 py-2 bg-[#786C3B]/10 text-[#786C3B] rounded-full text-sm font-medium">Detail-Oriented</span>
+                <span class="px-4 py-2 bg-[#786C3B]/10 text-[#786C3B] rounded-full text-sm font-medium">Client-Focused</span>
+                <span class="px-4 py-2 bg-[#786C3B]/10 text-[#786C3B] rounded-full text-sm font-medium">Adaptable</span>
+              </div>
+            </div>
+
+            <!-- Values & Approach -->
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-[#786C3B]/10 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-10 h-10 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-lg flex items-center justify-center mb-4">
+                  <i class="fas fa-heart text-white"></i>
+                </div>
+                <h4 class="text-lg font-semibold text-[#786C3B] mb-2">My Values</h4>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Integrity, excellence, and genuine care for every client's success drive everything I do.
+                </p>
+              </div>
+
+              <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-[#786C3B]/10 hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-10 h-10 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-lg flex items-center justify-center mb-4">
+                  <i class="fas fa-lightbulb text-white"></i>
+                </div>
+                <h4 class="text-lg font-semibold text-[#786C3B] mb-2">My Approach</h4>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Proactive communication, innovative solutions, and consistent delivery of exceptional results.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center lg:text-left">
+              <a
+                href="#contact"
+                class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] text-white rounded-xl font-semibold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
+              >
+                Let's Work Together
+                <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Side -->
+          <div class="relative" data-aos="fade-left" data-aos-delay="300">
+            <!-- Main Image Container -->
+            <div class="relative group">
+              <div class="absolute -inset-6 bg-gradient-to-r from-[#786C3B]/20 to-[#C9B99B]/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-300"></div>
+              
+              <div class="relative bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                <img
+                  src="/image/graciafull.webp"
+                  alt="Maria Gracia Salomo - Professional Virtual Assistant"
+                  class="w-full h-auto rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                />
+                
+                <!-- Floating Stats -->
+                <div class="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl border border-[#786C3B]/10">
+                  <div class="text-center">
+                    <div class="text-2xl font-bold text-[#786C3B]">7+</div>
+                    <div class="text-xs text-gray-600">Years Exp.</div>
+                  </div>
+                </div>
+                
+                <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl border border-[#786C3B]/10">
+                  <div class="text-center">
+                    <div class="text-2xl font-bold text-[#786C3B]">98%</div>
+                    <div class="text-xs text-gray-600">Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Background Elements -->
+            <div class="absolute top-1/4 -right-8 w-24 h-24 bg-[#786C3B]/10 rounded-full blur-xl"></div>
+            <div class="absolute bottom-1/4 -left-8 w-32 h-32 bg-[#C9B99B]/10 rounded-full blur-xl"></div>
+            
+            <!-- Decorative Icons -->
+            <div class="absolute top-8 right-8 w-12 h-12 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg animate-bounce">
+              <i class="fas fa-star text-[#786C3B]"></i>
+            </div>
+            
+            <div class="absolute bottom-8 left-8 w-12 h-12 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg animate-pulse">
+              <i class="fas fa-check text-[#786C3B]"></i>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Bottom Section - Quick Facts -->
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8" data-aos="fade-up" data-aos-delay="500">
+          <div class="text-center group">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-globe text-white text-xl"></i>
+            </div>
+            <h4 class="font-semibold text-[#786C3B] mb-1">Global Reach</h4>
+            <p class="text-sm text-gray-600">Serving clients worldwide</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-clock text-white text-xl"></i>
+            </div>
+            <h4 class="font-semibold text-[#786C3B] mb-1">24/7 Support</h4>
+            <p class="text-sm text-gray-600">Always available when needed</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-shield-alt text-white text-xl"></i>
+            </div>
+            <h4 class="font-semibold text-[#786C3B] mb-1">Reliable</h4>
+            <p class="text-sm text-gray-600">Consistent quality delivery</p>
+          </div>
+          
+          <div class="text-center group">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fas fa-rocket text-white text-xl"></i>
+            </div>
+            <h4 class="font-semibold text-[#786C3B] mb-1">Growth-Focused</h4>
+            <p class="text-sm text-gray-600">Helping businesses scale</p>
+          </div>
         </div>
       </div>
     </section>
