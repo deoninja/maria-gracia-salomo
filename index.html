@@ -87,74 +87,118 @@
     <!-- Navigation -->
     <nav
       id="navbar"
-      class="bg-[#964B00] text-white sticky top-0 z-50 shadow-md"
+      class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-lg"
       data-aos="fade-down"
       data-aos-duration="500"
     >
-      <div
-        class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#" class="text-xl font-bold">Maria Gracia Salomo</a>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          
+          <!-- Logo/Brand -->
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] rounded-xl flex items-center justify-center">
+              <span class="text-white font-bold text-lg">MG</span>
+            </div>
+            <div class="flex flex-col">
+              <a href="#home" class="text-xl font-bold text-[#786C3B] hover:text-[#C9B99B] transition-colors duration-300">
+                Maria Gracia Salomo
+              </a>
+              <span class="text-xs text-gray-600 font-medium">Virtual Assistant Expert</span>
+            </div>
+          </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-4 sm:space-x-6">
-          <a href="#about" class="nav-link hover:text-gray-200 transition"
-            >About</a
-          >
-          <a href="#skills" class="nav-link hover:text-gray-200 transition"
-            >Skills</a
-          >
-          <a
-            href="#achievements"
-            class="nav-link hover:text-gray-200 transition"
-            >Achievements</a
-          >
-          <a href="#experience" class="nav-link hover:text-gray-200 transition"
-            >Experience</a
-          >
-          <a href="#certifications" class="nav-link hover:text-gray-200 transition"
-          >Certifications</a
-        >
-          <a href="#contact" class="nav-link hover:text-gray-200 transition"
-            >Contact</a
-          >
-        </div>
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-1">
+            <a href="#about" class="nav-link group relative px-4 py-2 rounded-xl text-gray-700 hover:text-[#786C3B] transition-all duration-300 hover:bg-[#786C3B]/5">
+              <span class="relative z-10">About</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#786C3B]/10 to-[#C9B99B]/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a href="#skills" class="nav-link group relative px-4 py-2 rounded-xl text-gray-700 hover:text-[#786C3B] transition-all duration-300 hover:bg-[#786C3B]/5">
+              <span class="relative z-10">Skills</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#786C3B]/10 to-[#C9B99B]/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a href="#achievements" class="nav-link group relative px-4 py-2 rounded-xl text-gray-700 hover:text-[#786C3B] transition-all duration-300 hover:bg-[#786C3B]/5">
+              <span class="relative z-10">Achievements</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#786C3B]/10 to-[#C9B99B]/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a href="#experience" class="nav-link group relative px-4 py-2 rounded-xl text-gray-700 hover:text-[#786C3B] transition-all duration-300 hover:bg-[#786C3B]/5">
+              <span class="relative z-10">Experience</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#786C3B]/10 to-[#C9B99B]/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+            <a href="#certifications" class="nav-link group relative px-4 py-2 rounded-xl text-gray-700 hover:text-[#786C3B] transition-all duration-300 hover:bg-[#786C3B]/5">
+              <span class="relative z-10">Certifications</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#786C3B]/10 to-[#C9B99B]/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </a>
+          </div>
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="menu-btn" class="text-white focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
+          <!-- CTA Button & Mobile Menu -->
+          <div class="flex items-center space-x-4">
+            <!-- CTA Button -->
+            <a
+              href="#contact"
+              class="hidden sm:inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] text-white rounded-xl font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all duration-300 group"
+            >
+              <span>Get Started</span>
+              <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button 
+              id="menu-btn" 
+              class="lg:hidden relative w-10 h-10 bg-[#786C3B]/10 rounded-xl flex items-center justify-center text-[#786C3B] hover:bg-[#786C3B]/20 transition-colors duration-300 focus:outline-none"
+            >
+              <div class="relative">
+                <span class="sr-only">Open menu</span>
+                <div class="block w-5 h-0.5 bg-current transform transition duration-300 ease-in-out" id="line1"></div>
+                <div class="block w-5 h-0.5 bg-current transform transition duration-300 ease-in-out mt-1" id="line2"></div>
+                <div class="block w-5 h-0.5 bg-current transform transition duration-300 ease-in-out mt-1" id="line3"></div>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-[#A0522D] text-center">
-        <a href="#about" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-          >About</a
-        >
-        <a href="#skills" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-          >Skills</a
-        >
-        <a
-          href="#achievements"
-          class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-          >Achievements</a
-        >
-        <a
-          href="#experience"
-          class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-          >Experience</a
-        >
-        <a
-        href="#certifications"
-        class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-        >Certifications</a
-      >
-        
-        <a href="#contact" class="nav-link block py-3 px-4 hover:bg-[#8B4513]"
-          >Contact</a
-        >
+      <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-200/50">
+        <div class="container mx-auto px-4 py-6">
+          <div class="flex flex-col space-y-4">
+            <a href="#about" class="nav-link group flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:text-[#786C3B] hover:bg-[#786C3B]/5 transition-all duration-300">
+              <div class="w-2 h-2 bg-[#786C3B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span>About</span>
+            </a>
+            <a href="#skills" class="nav-link group flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:text-[#786C3B] hover:bg-[#786C3B]/5 transition-all duration-300">
+              <div class="w-2 h-2 bg-[#786C3B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span>Skills</span>
+            </a>
+            <a href="#achievements" class="nav-link group flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:text-[#786C3B] hover:bg-[#786C3B]/5 transition-all duration-300">
+              <div class="w-2 h-2 bg-[#786C3B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span>Achievements</span>
+            </a>
+            <a href="#experience" class="nav-link group flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:text-[#786C3B] hover:bg-[#786C3B]/5 transition-all duration-300">
+              <div class="w-2 h-2 bg-[#786C3B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span>Experience</span>
+            </a>
+            <a href="#certifications" class="nav-link group flex items-center space-x-3 px-4 py-3 rounded-xl text-gray-700 hover:text-[#786C3B] hover:bg-[#786C3B]/5 transition-all duration-300">
+              <div class="w-2 h-2 bg-[#786C3B] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <span>Certifications</span>
+            </a>
+            
+            <!-- Mobile CTA -->
+            <div class="pt-4 border-t border-gray-200">
+              <a
+                href="#contact"
+                class="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#786C3B] to-[#C9B99B] text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 group"
+              >
+                <span>Get Started</span>
+                <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -172,7 +216,7 @@
         <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-white rounded-full blur-2xl"></div>
       </div>
 
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="mt-8 container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
           
           <!-- Text content -->
@@ -1646,9 +1690,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
-      // window.onbeforeunload = function () {
-      //     window.scrollTo(0, 0);
-      // };
+      // Reset scroll position to top on page load
+      window.addEventListener('beforeunload', function() {
+        window.scrollTo(0, 0);
+      });
+      
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 100);
+      });
+
+      // Also reset on page refresh/reload
+      if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+      }
+
+      // Legacy support
       window.onload = function () {
           window.scrollTo(0, 0);
       };
